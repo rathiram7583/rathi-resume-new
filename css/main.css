@@ -1,4 +1,4 @@
-@import url(<link href="https://fonts.googleapis.com/css?family=Simonetta|Trade+Winds&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
 
 * { /* Basic browser reset. */
     box-sizing: border-box;
@@ -15,7 +15,7 @@
 }
 
 .flex-item {
-    font-family: 'Trade Winds', 'Simonetta', cursive;
+    font-family:  'Trade Winds','Simonetta', cursive;
     color: white;
     font-size: 64px;
     line-height: 460px;
@@ -31,6 +31,25 @@
     background: #5d8aa8;
 }
 
+item-2 {
+    background: #ffbf00;
+}
+
+.item-3 {
+    background: #e32636;
+}
+
+.item-4 {
+    background: #a4c639;
+}
+
+.item-5 {
+    background: #cd9575;
+}
+
+.item-6 {
+    background: #87a96b;
+}
 
 h2 {
     font-family: 'Trade Winds', 'Simonetta', cursive;
