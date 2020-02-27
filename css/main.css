@@ -27,28 +27,24 @@
 
 .heading {
     font-size: 16px;
-    white-space: nowrap;
+    white-space: wrap;
     background: #5d8aa8;
 }
 
-item-2 {
+.home {
     background: #ffbf00;
 }
 
-.item-3 {
+.education {
     background: #e32636;
 }
 
-.item-4 {
+.experience {
     background: #a4c639;
 }
 
-.item-5 {
+.contact {
     background: #cd9575;
-}
-
-.item-6 {
-    background: #87a96b;
 }
 
 h2 {
