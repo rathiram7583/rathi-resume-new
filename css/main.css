@@ -10,7 +10,7 @@
 
 .flexbox {
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     flex-wrap: wrap;
 }
 
@@ -18,16 +18,16 @@
     font-family:  'Trade Winds','Simonetta', cursive;
     color: white;
     font-size: 64px;
-    line-height: 460px;
+    line-height: 450px;
     text-align: center;
     display: block;
     width: 100%;
-    height: 460px;
+    height: 450px;
 }
 
 .heading {
-    font-size: 16px;
-    white-space: wrap;
+    font-size: 32px;
+    white-space: nowrap;
     background: #5d8aa8;
 }
 
@@ -49,5 +49,81 @@
 
 h2 {
     font-family: 'Trade Winds', 'Simonetta', cursive;
-    font-size: 26px;
+    font-size: 16px;
+}
+
+ 
+ul {
+    padding: 0;
+    width: 100%;
+  }
+  
+  li {
+    display:inline;
+  }
+  
+  a {
+    outline:none;
+    font-family: 'Trade Winds', 'Simonetta', cursive;
+    text-decoration: none;
+    display: inline-block;
+    width: 350px;
+    margin-right: 32px;
+    text-align: center;
+    line-height: 3;
+    color: red;
+  }
+  
+  li:last-child a {
+    margin-right: 0;
+  }
+  
+  a:link, a:visited, a:focus {
+    background: rgb(47, 0, 255);
+  }
+  
+  a:hover {     
+    background: orange;
+  }
+  
+  a:active {
+    background: red;
+    color: white;
+  }
+
+  header {
+    overflow: hidden;
+    background-color: hsl(308, 73%, 32%);
+    padding: 20px 10px;
+  }
+
+
+
+
+
+
+
+/* Tablet. */
+@media screen and ( min-width: 768px ) {
+
+    .home,
+    .education,
+    .experience,
+    .contact {
+        width: 50%;
+    }
+
+}
+
+
+/* Desktop. */
+@media screen and ( min-width: 1200px ) {
+
+    .education,
+    .experience,
+    .contact {
+        /* We can use the "calc" function in CSS to perform mathematical operations! */
+        width: calc( 100% / 3 ); /* This will be more precise than 33.333%! */
+    }
+
 }
