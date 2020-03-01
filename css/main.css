@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two&display=swap');
 
 * { /* Basic browser reset. */
     box-sizing: border-box;
-    margin: 8;
-    padding: 8;
+    margin: 10;
+    padding: 10;
     font-size: 16px;
 }
 
@@ -15,8 +15,8 @@
 }
 
 .flex-item {
-    font-family:  'Trade Winds','Simonetta', cursive;
-    color: white;
+    font-family:'Lobster Two','Simonetta', cursive;
+    
     font-size: 64px;
     line-height: 450px;
     text-align: center;
@@ -25,14 +25,18 @@
     height: 450px;
 }
 
-.heading {
-    font-size: 32px;
+h1 {
+    font-size: 48px;
+    text-align: center;
     white-space: nowrap;
     background: #5d8aa8;
+    color: coral;
+
 }
 
-.home {
-    background: #ffbf00;
+.about-me {
+    background:yellow;
+    
 }
 
 .education {
@@ -47,9 +51,13 @@
     background: #cd9575;
 }
 
+.footer{
+  background: blueviolet;
+}
+
 h2 {
-    font-family: 'Trade Winds', 'Simonetta', cursive;
-    font-size: 16px;
+    font-family: 'Lobster Two', 'Simonetta', cursive;
+    font-size: 20px;
 }
 
  
@@ -64,7 +72,7 @@ ul {
   
   a {
     outline:none;
-    font-family: 'Trade Winds', 'Simonetta', cursive;
+    font-family: 'Lobster Two', 'Simonetta', cursive;
     text-decoration: none;
     display: inline-block;
     width: 350px;
@@ -72,6 +80,7 @@ ul {
     text-align: center;
     line-height: 3;
     color: red;
+    border-radius: 20px;
   }
   
   li:last-child a {
@@ -93,11 +102,15 @@ ul {
 
   header {
     overflow: hidden;
-    background-color: hsl(308, 73%, 32%);
+    background-color: hsl(263, 86%, 17%);
     padding: 20px 10px;
   }
 
+.about-me p{
+  
+  text-align: left;
 
+}
 
 
 
@@ -106,10 +119,11 @@ ul {
 /* Tablet. */
 @media screen and ( min-width: 768px ) {
 
-    .home,
+    .about-me,
     .education,
     .experience,
-    .contact {
+    .contact,
+    .footer {
         width: 50%;
     }
 
@@ -121,9 +135,10 @@ ul {
 
     .education,
     .experience,
-    .contact {
-        /* We can use the "calc" function in CSS to perform mathematical operations! */
-        width: calc( 100% / 3 ); /* This will be more precise than 33.333%! */
+    .contact,
+    .footer{
+        
+        width: calc( 100% / 3 );
     }
 
 }
